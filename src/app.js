@@ -34,6 +34,4 @@ server.use(
 server.use("/customer", require("./routes/customers"));
 server.use("/", require("./routes/order"));
 
-server.listen(5000, () => {
-  console.log(`listening on port 5000`);
-});
+module.exports = app;
